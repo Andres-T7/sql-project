@@ -1,4 +1,4 @@
-# Digital Book Market Analysis — SQL + Python
+# Digital Book Market Analysis — SQL
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -13,7 +13,7 @@ Exploratory data analysis on a competitor's database in the digital book applica
 Extract key insights from the catalog and user behavior to support strategic decision-making in the design of a new book app, identifying relevant publishers, top-rated authors, and user engagement patterns.
 
 ## Project Files
-- `Proyecto_Ebooks_SQL.ipynb` — Main notebook with the full analysis
+- `ebooks-sql-project.ipynb` — Main notebook with the full analysis
 - `images/` — Data structure diagram
 - `.env.example` — Environment variables template
 
@@ -31,13 +31,13 @@ Extract key insights from the catalog and user behavior to support strategic dec
 ## Data Description
 The client provided a database containing information from a market competitor. The dataset integrates books, publishers, and authors data, along with user ratings and reviews, structured across the following tables:
 
-| Table        | Description                                              |
-| ------------ | -------------------------------------------------------- |
-| `books`      | Book details: title, page count, publication date        |
-| `authors`    | Author ID and name                                       |
-| `publishers` | Publisher ID and name                                    |
-| `ratings`    | Numerical ratings per book and user                      |
-| `reviews`    | Text reviews per book and user                           |
+| Table        | Description                                       |
+| ------------ | ------------------------------------------------- |
+| `books`      | Book details: title, page count, publication date |
+| `authors`    | Author ID and name                                |
+| `publishers` | Publisher ID and name                             |
+| `ratings`    | Numerical ratings per book and user               |
+| `reviews`    | Text reviews per book and user                    |
 
 ## Requirements
 `pandas` · `sqlalchemy` · `psycopg2-binary` · `python-dotenv`
