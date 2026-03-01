@@ -1,4 +1,4 @@
-# Análisis de Mercado de Libros Digitales — SQL
+# Digital Book Market Analysis — SQL + Python
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -6,41 +6,40 @@
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-## Descripción
-Análisis exploratorio sobre la base de datos de un competidor en el mercado de aplicaciones de libros digitales, con más de 1,000 títulos, 179 editoriales y miles de calificaciones de usuarios. El proyecto surge del contexto post-pandemia, donde el consumo de libros digitales creció significativamente, generando una oportunidad para el lanzamiento de un nuevo producto en este mercado.
+## Description
+Exploratory data analysis on a competitor's database in the digital book application market, covering over 1,000 titles, 179 publishers, and thousands of user ratings. The project is rooted in the post-pandemic context, where digital book consumption grew significantly, creating a market opportunity for the launch of a new product in this space.
 
-## Objetivo
-Extraer insights clave del catálogo y del comportamiento de los usuarios para fundamentar decisiones estratégicas en el diseño de una nueva app de libros, identificando editoriales relevantes, autores mejor valorados y patrones de participación de los usuarios.
+## Objective
+Extract key insights from the catalog and user behavior to support strategic decision-making in the design of a new book app, identifying relevant publishers, top-rated authors, and user engagement patterns.
 
-## Archivos del proyecto
-- `Proyecto_Ebooks_SQL.ipynb` — Notebook principal con el análisis completo
-- `images/` — Diagrama de la estructura de los datos
-- `.env.example` — Plantilla de variables de entorno requeridas
+## Project Files
+- `Proyecto_Ebooks_SQL.ipynb` — Main notebook with the full analysis
+- `images/` — Data structure diagram
+- `.env.example` — Environment variables template
 
-## Hallazgos principales
-1. El **80% del catálogo (819 de 1,000 libros)** corresponde a publicaciones posteriores al año 2000, lo que indica una oferta alineada con intereses actuales.
-2. **Penguin Books** es la editorial con mayor presencia en el catálogo con **42 libros** de más de 50 páginas, posicionándola como un socio estratégico potencial.
-3. **J.K. Rowling/Mary GrandPré** obtuvo la calificación promedio más alta (**4.28/5.0**) entre autores con al menos 50 calificaciones, lo que indica un alto engagement en títulos con amplio volumen de evaluaciones.
-4. Los usuarios más activos califican una gran cantidad de libros, pero generan pocas reseñas de texto, lo que representa una oportunidad para incentivar participación más cualitativa.
+## Key Findings
+1. **80% of the catalog (819 out of 1,000 books)** were published after the year 2000, reflecting an offering aligned with current reader interests.
+2. **Penguin Books** has the largest presence in the catalog with **42 books** exceeding 50 pages, positioning it as a potential strategic partner.
+3. **J.K. Rowling/Mary GrandPré** achieved the highest average rating (**4.28/5.0**) among authors with at least 50 ratings, indicating strong user engagement on titles with a significant review volume.
+4. The most active users rate a large number of books but generate few text reviews, representing an opportunity to incentivize more qualitative participation.
 
-## Conclusiones y recomendaciones de negocio
-- Priorizar en el sistema de recomendaciones de la App a autores y libros con alta calificación y volumen significativo de evaluaciones.
-- Establecer alianzas estratégicas con Penguin Books dado su peso en el catálogo y su valoración por los usuarios.
-- Implementar mecanismos de incentivos para fomentar la escritura de reseñas entre los usuarios más activos, mejorando la calidad de la información disponible para otros lectores.
+## Business Conclusions & Recommendations
+- Prioritize authors and books with high ratings and significant review volume in the app's recommendation system.
+- Establish strategic partnerships with Penguin Books given its catalog weight and strong user perception.
+- Implement incentive mechanisms to encourage text reviews among the most active users, improving the quality of information available to other readers.
 
-## Descripción de los datos
-El cliente suministró una base de datos que contiene información de un competidor en el mercado. El dataset integra datos de libros, editoriales y autores, además de calificaciones y reseñas de clientes, distribuidos en las siguientes tablas:
+## Data Description
+The client provided a database containing information from a market competitor. The dataset integrates books, publishers, and authors data, along with user ratings and reviews, structured across the following tables:
 
-| Tabla        | Descripción                                                      |
-| ------------ | ---------------------------------------------------------------- |
-| `books`      | Información de cada libro: título, páginas, fecha de publicación |
-| `authors`    | Identificación y nombre de autores                               |
-| `publishers` | Identificación y nombre de editoriales                           |
-| `ratings`    | Calificaciones numéricas por libro y usuario                     |
-| `reviews`    | Reseñas de texto por libro y usuario                             |
+| Table        | Description                                              |
+| ------------ | -------------------------------------------------------- |
+| `books`      | Book details: title, page count, publication date        |
+| `authors`    | Author ID and name                                       |
+| `publishers` | Publisher ID and name                                    |
+| `ratings`    | Numerical ratings per book and user                      |
+| `reviews`    | Text reviews per book and user                           |
 
-
-## Requisitos
+## Requirements
 `pandas` · `sqlalchemy` · `psycopg2-binary` · `python-dotenv`
 ```bash
 pip install -r requirements.txt
