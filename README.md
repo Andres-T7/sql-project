@@ -28,6 +28,11 @@ Extract key insights from the catalog and user behavior to support strategic dec
 - Establish strategic partnerships with Penguin Books given its catalog weight and strong user perception.
 - Implement incentive mechanisms to encourage text reviews among the most active users, improving the quality of information available to other readers.
 
+## Project Preview
+
+<img src="images/data_structure.png" width="600">
+
+
 ## Data Description
 The client provided a database containing information from a market competitor. The dataset integrates books, publishers, and authors data, along with user ratings and reviews, structured across the following tables:
 
